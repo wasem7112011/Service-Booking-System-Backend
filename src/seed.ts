@@ -13,7 +13,7 @@ async function seed() {
     await User.create({
       name: "System Admin",
       email: adminEmail,
-      password: "ChangeMe123!", // hashed automatically by the pre-save hook
+      password: "ChangeMe123!",
       role: "admin",
     });
     console.log(`[seed] Admin created: ${adminEmail} / ChangeMe123! (change this immediately)`);
